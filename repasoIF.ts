@@ -80,7 +80,7 @@ paisCont('Tonga');
 paisCont('Egipto');
 
 
-function isParOrNot(number: number){
+export function isParOrNot(number: number){
     if(number % 2 == 0){
         console.log('El numero es par')
 

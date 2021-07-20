@@ -77,36 +77,11 @@ function sumacarc(arr: string[]):number{
     return sumacaracteres
 }
 
-
-
-
-let array1 = ['hola', 'como', 'estas']
-let array4 = ['hola', 'como', 'estas',' ','123456789']
-
-console.log(sumacarc(array1));
-console.log(sumacarc(array4));
-
-
-
+import  {isParOrNot} from "./repasoIF"
 function sumaParorNot(arr: string[]){
-    let sumacaracteres: number = 0
+    let suma = sumacarc(arr)
     
-    for (let key in arr) {
-        sumacaracteres += arr[key].length
-    }
-
-    if(sumacaracteres % 2 == 0){
-        console.log('El numero es par')
-
-    }else{
-        console.log('El numero es impar');
-        
-    }
-
-
-
-
-
+    isParOrNot(suma)
 
     
 }
@@ -118,4 +93,5 @@ let array2 = ['Venezuela','Veneno','Voltaje']
 sumaParorNot(array5)
 sumaParorNot(array3)
 sumaParorNot(array2)
+
 
